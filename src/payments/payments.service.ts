@@ -67,11 +67,9 @@ export class PaymentsService {
       res.status(400).send(`Webhook Error: ${err.message}`);
       return;
     }
-    console.log('---->', event);
 
     switch (event.type) {
       case 'charge.succeeded':
-        console.log('-----kaka--------');
         const chargeSucceeded = event.data.object;
         // TODO: llamar nuestro microservicio
         console.log({
