@@ -1,0 +1,3 @@
+export const PAYMENT_SERVICE = 'PAYMENT_SERVICE';
+
+export const NATS_SERVICE = 'NATS_SERVICE';
